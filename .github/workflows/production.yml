@@ -1,5 +1,5 @@
 name: Production build
-description: Production build
+
 on:
     push:
         branchs:
