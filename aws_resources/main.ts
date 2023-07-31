@@ -13,7 +13,7 @@ class StaticWebsiteStack extends TerraformStack {
       acl: 'public-read',
       website: [{
         indexDocument: 'index.html',
-        errorDocument: '404.html',
+        errorDocument: 'index.html',
       }],
     });
 
