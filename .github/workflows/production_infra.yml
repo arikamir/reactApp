@@ -5,7 +5,7 @@ on:
         branches:
             - main
         paths:
-          - aws_resources
+          - aws_resources/*
 jobs:
   terraform:
     name: "Terraform CDK Deploy"
