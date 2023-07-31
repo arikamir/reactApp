@@ -1,4 +1,4 @@
-name: Production build
+name: Production infra build
 
 on:
     push:
