@@ -11,10 +11,6 @@ class StaticWebsiteStack extends TerraformStack {
      const websiteBucket = new S3Bucket(this, 'websiteBucket', {
       bucket: 'your-unique-bucket-name', // Change this to a unique bucket name for your website
       acl: 'public-read',
-      website: [{
-        indexDocument: 'index.html',
-        errorDocument: 'index.html',
-      }],
     });
 
 
