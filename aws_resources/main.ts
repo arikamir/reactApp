@@ -9,7 +9,7 @@ class StaticWebsiteStack extends TerraformStack {
 
      // Create an S3 bucket for the static website with website configuration
      const websiteBucket = new S3Bucket(this, 'websiteBucket', {
-      bucket: 'your-unique-bucket-name', // Change this to a unique bucket name for your website
+      bucket: 'aws-reactapp', // Change this to a unique bucket name for your website
       acl: 'public-read',
     });
 
