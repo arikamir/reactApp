@@ -9,6 +9,8 @@ class StaticWebsiteStack extends TerraformStack {
     super(scope, name);
       const aws = new provider.AwsProvider(this, 'aws', {
       region: 'us-east-1',
+      accessKey: process.env.AWS_ACCESS_KEY_ID,
+      secretKey: process.env.AWS_SECRET_ACCESS_KEY,
     });
      // Create an S3 bucket for the static website with website configuration
      const websiteBucket = new S3Bucket(this, 'websiteBucket', {
