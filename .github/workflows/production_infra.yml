@@ -36,5 +36,5 @@ jobs:
           mode: auto-approve-apply
           terraformCloudToken: ${{ secrets.TF_API_TOKEN }}
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          working-directory: aws_resources
+          workingDirectory: aws_resources
         
