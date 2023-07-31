@@ -14,7 +14,7 @@ class StaticWebsiteStack extends TerraformStack {
     });
 
 
-    // Output the bucket URL
+    // Output the bucket URL for the website
     new Output(this, 'websiteUrl', {
       value: websiteBucket.websiteEndpoint!,
     });
