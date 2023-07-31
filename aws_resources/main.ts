@@ -18,7 +18,7 @@ class StaticWebsiteStack extends TerraformStack {
       website: [
         {
           indexDocument: 'index.html', // Change this to the name of your index file
-          errorDocument: 'index.html', // Change this to the name of your error file
+          errorDocument: 'error.html', // Change this to the name of your error file
         },
       ],
     });
