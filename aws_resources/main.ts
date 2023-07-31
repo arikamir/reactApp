@@ -29,4 +29,4 @@ class StaticWebsiteStack extends TerraformStack {
 
 const app = new App();
 new StaticWebsiteStack(app, 'StaticWebsiteStack');
-
+app.synth();
