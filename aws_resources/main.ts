@@ -26,9 +26,6 @@ class StaticWebsiteStack extends TerraformStack {
 }
 
 
-// Create a new CDKTF stack
-new StaticWebsiteStack(app, 'StaticWebsiteStack');
-
 const app = new App();
 new StaticWebsiteStack(app, 'StaticWebsiteStack');
 app.synth();
