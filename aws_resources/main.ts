@@ -12,7 +12,7 @@ class StaticWebsiteStack extends TerraformStack {
       accessKey: process.env.AWS_ACCESS_KEY_ID,
       secretKey: process.env.AWS_SECRET_ACCESS_KEY,
     });
-     // Create an S3 bucket for the static website with website configuration
+     // Create an S3 bucket for the static website with website configuration enabled
      const websiteBucket = new S3Bucket(this, 'websiteBucket', {
       bucket: 'aws-reactapp', // Change this to a unique bucket name for your website
       acl: 'public-read',
